@@ -1,0 +1,22 @@
+<doctype html>
+<html>
+<head>
+  <title>Random Dog</title>
+</head>
+<body>
+  <h1>Random Dog</h1>
+  <button onclick="getDog()">Get Dog</button>
+  <img src="https://random.dog/0.jpg" alt="dog" id="dog">
+  <script>
+    function getDog() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://random.dog/woof.json');
+      xhr.onload = function() {
+        var response = JSON.parse(xhr.responseText);
+        document.getElementById('dog').src = response.url;
+      }
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
