@@ -1,0 +1,22 @@
+<doctype html>
+<html>
+<head>
+<title>Random Panda</title>
+<style>
+body {
+    background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+<h1>Random Panda</h1>
+<img src="https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif" alt="Random Panda" width="500" height="500">
+<script>
+var images = ["https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif", "https://media.giphy.com/media/3o6Zt3qY8QXqgXQq2U/giphy.gif"]; 
+</script>
+<script>
+var random = Math.floor(Math.random() * images.length);
+document.write("<img src=" + images[random] + ">");
+</script>
+</body>
+</html>
